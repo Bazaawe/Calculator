@@ -1,0 +1,64 @@
+body {
+	background-image: url(../img/taxi-pic.jpeg); background-repeat: no-repeat;
+	background-position: ;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+/***BOX SHADOW***/
+.calculator { -webkit-box-shadow:0 0.06em 0.25em 0 rgba(0,0,0,0.2); box-shadow:0 0.06em 0.25em 0 rgba(0,0,0,0.2); }
+.input { overflow-x: auto; }
+.input:hover { -webkit-box-shadow: inset 0 0.063em 0.25em 0 rgba(0,0,0,0.2); 
+	box-shadow: inset 0 0.063em 0.25em 0 rgba(0,0,0,0.2); }
+.operators div:hover { -webkit-box-shadow:0 0.06em 0.25em 0 rgba(0,0,0,0.2); 
+	box-shadow:0 0.06em 0.25em 0 rgba(0,0,0,0.2); }
+.numbers div:hover { -webkit-box-shadow:0 0.06em 0.25em 0 rgba(0,0,0,0.2); 
+	box-shadow:0 0.06em 0.25em 0 rgba(0,0,0,0.2); }
+div.equal:hover{ -webkit-box-shadow:0 0.06em 0.25em 0 rgba(0,0,0,0.2); 
+	box-shadow:0 0.06em 0.25em 0 rgba(0,0,0,0.2); }
+
+/***POSITION AND DISPLAY***/
+.operators div,.leftPanel,.numbers div,div.equal{ display: inline-block; } 
+ div.equal{ vertical-align: top; }
+
+/***padding and margins***/
+body { margin: 4% auto; }
+.calculator { padding: 1.25em; }
+.input { padding: 0.625em .938em 0 0; margin: 0 0.375em 0 0;}
+.operators div{ padding: 0.625em; margin: 1.25em 0.25em 0.625em 0; }
+.numbers div{ padding: 0.625em; margin: 0.625em 0.25em 0.625em 0; }
+ div.equal{ padding: 6.3em 0.0em; margin: 0.625em 0.3em 0.625em 0; }
+
+/***Size(font size)***/
+body { width: 100%; font-size: 1.8rem; }
+.input { height: 3.75em; font-size: 2.5rem; }
+.operators div { width: 5em; }
+.numbers div{ width:5em; }
+ div.equal{ width: 17%; }
+
+/***FONT STYLE***/
+.input { text-align: right; }
+.operators div, .numbers div, div.equal{ text-align: center; }
+div.equal:active { font-weight: bold; }
+
+/***BORDER***/
+.input, .operators div, .numbers div { border: 0.06em solid #ddd; }
+.calculator, .input, .operators div, div.equal, .numbers div { border-radius: 0.06em; }
+.input:hover{ border: 0.063em solid #bbb; }
+
+
+/***COLOUR***/
+.operators div{ background-color: #ddd; }
+.operators div:hover { background-color: #ddd; border-color: #aaa; }
+.number div { background-color: #f9f9f9; }
+.numbers div: hover{ background-color: #f1f1;  border-color:#bbb;}
+div.equal{ color: #FFF; background-color: #4d90fe; border-color: #3079ED;}
+div.equal:hover { background-color: #307CF9; border-color: #1857BB; }
+
+/***ANIMATION***/
+.input, div.equal { transition: all .2s ease-in-out; }
+ div.equal { cursor: pointer; }
+.operators div, .numbers div {cursor: pointer; 
+transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
+}
+.numbers div:hover { background-color: gold; }
